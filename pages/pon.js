@@ -1,5 +1,18 @@
-import { css } from '@emotion/react'
-const style = css`color: #ff0000;`
+import { css } from "@emotion/react";
+import { colors } from "../constants/colors";
+import { marginBottom } from "../styles/marginBottom";
+import { Header } from "../components/Header";
+import { MainVisual } from "../components/MainVisual";
+
+const style = css`
+    background-color: ${colors.primary.main};
+`;
+
 export default function Pon() {
-    return(<p css={style}>あけましておめでとう</p>)
-}
+    return(
+        <div>
+            <Header />
+            <MainVisual />
+        </div>
+    );
+};
